@@ -1,6 +1,6 @@
 {
   "name": "launch-package",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Launch a packaged app",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,9 @@
     "powershell",
     "activation"
   ],
-  "bin": "index.js",
+  "bin": {
+    "launch-package": "index.js"
+  },
   "author": "Alexander Sklar",
   "license": "MIT",
   "bugs": {
