@@ -1,0 +1,31 @@
+{
+  "name": "launch-package",
+  "version": "0.0.1",
+  "description": "Launch a packaged app",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asklar/launch-package.git"
+  },
+  "keywords": [
+    "uwp",
+    "launch",
+    "msix",
+    "appx",
+    "windows",
+    "powershell",
+    "activation"
+  ],
+  "author": "Alexander Sklar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asklar/launch-package/issues"
+  },
+  "homepage": "https://github.com/asklar/launch-package#readme",
+  "files": [
+    "src/**"
+  ]
+}
