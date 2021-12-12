@@ -2,7 +2,7 @@
   "name": "launch-package",
   "version": "0.0.1",
   "description": "Launch a packaged app",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/asklar/launch-package#readme",
   "files": [
-    "src/**"
+    "index.js",
+    "launch.ps1"
   ]
 }
