@@ -1,8 +1,8 @@
 {
   "name": "launch-package",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Launch a packaged app",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,7 @@
     "activation"
   ],
   "bin": {
-    "launch-package": "index.js"
+    "launch-package": "./index.js"
   },
   "author": "Alexander Sklar",
   "license": "MIT",
