@@ -1,8 +1,8 @@
 {
   "name": "launch-package",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Launch a packaged app",
-  "main": "./index.js",
+  "main": "./bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,7 @@
     "activation"
   ],
   "bin": {
-    "launch-package": "./index.js"
+    "launch-package": "./bin/index.js"
   },
   "author": "Alexander Sklar",
   "license": "MIT",
@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/asklar/launch-package#readme",
   "files": [
-    "index.js",
-    "launch.ps1"
+    "bin/**"
   ]
 }
