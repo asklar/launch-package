@@ -1,6 +1,6 @@
 {
   "name": "launch-package",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Launch a packaged app",
   "main": "./bin/index.js",
   "scripts": {
