@@ -19,6 +19,7 @@
     "powershell",
     "activation"
   ],
+  "bin": "index.js",
   "author": "Alexander Sklar",
   "license": "MIT",
   "bugs": {
