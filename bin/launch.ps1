@@ -71,8 +71,6 @@ if ($argv.Count -gt 0) {
 }
 
 try {
-    $applicationUserModelId
-    $launchArgs
     $appActivator.ActivateApplication($applicationUserModelId,$launchArgs,[StoreAppRunner.ActivateOptions]::None,[ref]0) | Out-Null
 } catch {
     $log = Get-EventLog 'Application' -EntryType Error -Message "*$PackageID*" -Newest 1

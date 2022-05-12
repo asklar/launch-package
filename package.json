@@ -1,6 +1,6 @@
 {
   "name": "launch-package",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Launch a Windows packaged app",
   "main": "./bin/index.js",
   "scripts": {
