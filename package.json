@@ -1,7 +1,7 @@
 {
   "name": "launch-package",
-  "version": "0.0.8",
-  "description": "Launch a packaged app",
+  "version": "0.0.9",
+  "description": "Launch a Windows packaged app",
   "main": "./bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

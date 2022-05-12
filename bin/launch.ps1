@@ -57,7 +57,11 @@ namespace StoreAppRunner
 "@
 
 $package = Get-AppxPackage $PackageID
+if ($package -eq $null) {
+    throw "Can't find package $PackageID - make sure you specify the friendly name"
+}
 $manifest = Get-AppxPackageManifest $package
+
 $applicationUserModelId = $package.PackageFamilyName + "!" + $manifest.package.applications.application.id
 
 add-type -TypeDefinition $code
@@ -67,10 +71,15 @@ if ($argv.Count -gt 0) {
 }
 
 try {
+    $applicationUserModelId
+    $launchArgs
     $appActivator.ActivateApplication($applicationUserModelId,$launchArgs,[StoreAppRunner.ActivateOptions]::None,[ref]0) | Out-Null
 } catch {
     $log = Get-EventLog 'Application' -EntryType Error -Message "*$PackageID*" -Newest 1
     if ($null -ne $log) {
         Write-Error $log.Message
+    }
+    else {
+        Write-Error 'Something went wrong' $_
     }
 }
